@@ -1,0 +1,6 @@
+-- MySQL
+--
+-- WHERE A IS null : A가 null인것만
+-- WHERE A IS NOT null : A가 null이 아닌것만
+--
+SELECT ANIMAL_ID FROM ANIMAL_INS WHERE NAME IS NOT NULL ORDER BY ANIMAL_ID;
