@@ -1,0 +1,14 @@
+-- MySQL
+--
+-- [집계 함수]
+-- 집계 함수는 계산을 수행하고 단일 값을 반환한다.
+-- SELECT문 또는 Having 절에만 사용 가능하다.
+-- COUNT는 NULL값을 무시한다.
+-- 
+-- MAX(n) : 필드 n의 값 중 가장 큰 n값
+-- MIN(n) : 필드 n의 값 중 가장 작은 n값
+-- SUM(n) : 모든 필드 n의 값을 합산한 값
+-- AVG(n) : 모든 필드 n의 값을 평균낸 값
+-- COUNT(n) : 모든 필드 n을 셈한 값 (default : null 포함)
+--
+SELECT MAX(DATETIME) as "시간" FROM ANIMAL_INS;
