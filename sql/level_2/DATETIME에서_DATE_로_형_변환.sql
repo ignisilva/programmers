@@ -1,0 +1,21 @@
+-- MySQL
+--
+-- [데이터 타입 변환]
+--
+-- CONVERT(타입, 컬럼명)
+--
+-- CAST(컬럼명 AS 타입)
+--
+-- [날짜 데이터 타입 변환]
+-- 
+-- DATE_FORMAT(컬럼명, '%Y-%m-%d')
+-- %Y: 4자리 연도
+-- %y : 2자리 연도
+-- %m : 2자리 월
+-- %d : 2자리 일
+-- %H : 24시간 형식 시(00-23)
+-- %h : 12시간 형식 시(01-12)
+-- %i : 2자리 분(0-59)
+-- %S, %s : 2자리 초(0-59)
+--
+SELECT ANIMAL_ID, NAME, DATE_FORMAT(DATETIME, '%Y-%m-%d') AS "날짜" FROM ANIMAL_INS ORDER BY ANIMAL_ID;

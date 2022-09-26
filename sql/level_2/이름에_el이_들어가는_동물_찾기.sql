@@ -1,0 +1,11 @@
+-- MySQL
+--
+-- [문자열 부분 일치]
+-- A LIKE "%B%" : 앞뒤로 여러 문자 있을 수 있음
+-- A LIKE "_B_" : 앞뒤로 한문자 있음
+-- 
+-- [문자열 대소문자 구분없이 검색]
+-- WHERE LOWER(A) LIKE LOWER("%B%")
+-- WHERE UPPER(A) LIKE UPPER("%B%")
+-- 
+SELECT ANIMAL_ID, NAME FROM ANIMAL_INS WHERE ANIMAL_TYPE = "Dog" AND NAME LIKE "%el%" ORDER BY NAME;
