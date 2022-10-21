@@ -24,6 +24,22 @@ a, b := 3, 5
 a, b = b, a
 ```
 
+### 문자열을 아스키/유니코드 문자열 슬라이스로 반환
+
+```
+byteSlice := []byte("Hello") [72 101 108 108 111] // 아스키
+
+runeSlice := []rune("Hello") [72 101 108 108 111] // 유니코드
+```
+
+### 아스키/유니코드 문자열 슬라이스를 문자열로 반환
+
+```
+str := string([]byte("Hello")) // 아스키
+
+str := string([]rune("Hello")) // 유니코드
+```
+
 ## Slice
 
 ## Map
@@ -50,6 +66,14 @@ strconv.Itoa(index) // "0"
 
 ```
 import "strings"
+```
+
+### Split
+
+문자열을 각각의 알파벳으로 나눠서 문자열 슬라이스로 반환
+
+```
+strSlice := strings.Split("hello", "") // [h e l l o]
 ```
 
 ### Join
